@@ -30,7 +30,7 @@ def get_sales_data():
         sales_data = data_str.split(",")
 
         if validate_data(sales_data):
-            print("Data is valid!")
+            print("Data is valid!\n")
             break
     return sales_data
 
@@ -58,20 +58,20 @@ def validate_data(values):
 #     """
 #     Update sales worksheet, add new pow with the list data provided.
 #     """
-#     print("Updating sales worksheet...")
+#     print("Updating sales worksheet...\n")
 #     sales_worksheet = SHEET.worksheet("sales")
 #     sales_worksheet.append_row(data)
-#     print("Sales Worksheet updated successfully! ")
+#     print("Sales Worksheet updated successfully! \n")
 
 
 # def update_surplus_worksheet(data):
 #     """
 #     Update surplus worksheet, add new pow with the list data provided.
 #     """
-#     print("Updating surpluss worksheet...")
+#     print("Updating surpluss worksheet...\n")
 #     surplus_worksheet = SHEET.worksheet("surplus")
 #     surplus_worksheet.append_row(data)
-#     print("Surplus Worksheet updated successfully! ")
+#     print("Surplus Worksheet updated successfully! \n")
 
 
 def update_worksheet(data, worksheet):
@@ -79,7 +79,7 @@ def update_worksheet(data, worksheet):
     Receives a list of integers to be inserted into a worksheet
     Update the relevant worksheet with the data provided 
     """
-    print(f"Updating {worksheet} worksheet...")
+    print(f"Updating {worksheet} worksheet...\n")
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
     print(f"{worksheet} worksheet updated successfully...\n")
